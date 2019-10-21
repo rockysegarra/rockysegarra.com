@@ -1,0 +1,47 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+html, body { height: 100%; background-color: #001125; color: white;}
+a { color: #E35B50;}
+p { font-family: 'Assistant', sans-serif; widows: 3; }
+.icu {
+    position: relative;
+    top: -10px;
+}
+
+.dot {
+    height: 150px;
+    width: 150px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+.icons {
+    font-size: 20px;
+}
+
+// MEDIA QUERIES
+
+@media screen and (min-width: 320px) {
+    html {
+        font-size: calc(14px + 6 * ((100vw - 320px) / 680));
+    }
+    h1 {
+        font-size: calc(24px + 5 * ((100vw - 320px) / 680));
+    }
+    h2 {
+        font-size: calc(16px + 5 * ((100vw - 320px) / 680));
+      }
+  }
+  @media screen and (min-width: 1000px) {
+    html {
+        font-size: 16px;
+    }
+    
+    h1 {
+        font-size: 34px;
+    }
+    h2 {
+        font-size: 18px;
+      }
+  }
