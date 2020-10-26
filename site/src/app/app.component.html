@@ -1,1 +1,72 @@
-<router-outlet></router-outlet>
+<div class="container-fluid h-100">
+    <div class="row justify-content-center h-100">
+        <div class="col">
+            <div class="d-flex align-items-between flex-column" style="height: 100%;">
+                <div class="mb-auto">
+                    <div class="d-flex justify-content-between flex-row">
+                        <div class="pb-5">
+                            <a href="/"><img style="width: 100px;" src="assets/rsux-logo.png"></a>
+                        </div>
+                        <div>
+                            <ul class="nav justify-content-end">
+                                <li class="nav-item">
+                                    <a routerLink="/about" class="nav-link">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a routerLink="/work" class="nav-link">Work</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="https://gumroad.com/rockysegarra" class="nav-link">Shop</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-auto">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <router-outlet></router-outlet>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="bg-highlight">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4 mb-5">
+                                <a href="mailto:rockysegarra@icloud.com">
+                                    <div class="h5">Email Me!</div>
+                                    <small class="text-white">The fastest way to get in touch<br> Drop me a
+                                        line.</small>
+                                </a>
+                            </div>
+                            <div class="col-lg-4 mb-3">
+                                <div class="d-flex justify-content-lg-start justify-content-between icons">
+                                    <div class="pr-4"><a href="https://dribbble.com/rockysegarra">
+                                            <fa-icon [icon]="faDribbble"></fa-icon>
+                                        </a></div>
+                                    <div class="pr-4"><a href="https://twitter.com/rockysegarra">
+                                            <fa-icon [icon]="faTwitter"></fa-icon>
+                                        </a></div>
+                                    <div class="pr-4"><a href="https://www.instagram.com/rockysegarra">
+                                            <fa-icon [icon]="faInstagram"></fa-icon>
+                                        </a></div>
+                                    <div class="pr-4"><a href="https://www.linkedin.com/in/rockysegarra/">
+                                            <fa-icon [icon]="faLinkedin"></fa-icon>
+                                        </a></div>
+                                    <div class="pr-4"><a href="https://medium.com/@rockysegarra">
+                                            <fa-icon [icon]="faMedium"></fa-icon>
+                                        </a></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

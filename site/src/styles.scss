@@ -1,24 +1,51 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
+@import '~animate.css/animate.min.css';
+
+$primary: #F15A24;
+$secondary: #F7931E;
 
 html, body { height: 100%; background-color: #001125; color: white;}
-a { color: #E35B50;}
+.container-fluid {
+    padding: 2em;
+}
+a { color: $primary;}
+a:hover {
+    color: $secondary;
+    text-decoration: none;
+}
 p { font-family: 'Assistant', sans-serif; widows: 3; }
 .icu {
     position: relative;
     top: -10px;
 }
-
-.dot {
-    height: 150px;
-    width: 150px;
-    background-color: white;
-    border-radius: 50%;
-    display: inline-block;
-  }
-
-.icons {
-    font-size: 20px;
+.text-primary {
+    color: $primary !important;
 }
+
+.text-muted {
+    color: rgba(189, 189, 189, 0.4);
+}
+.modal-content {
+    border-radius: 0rem !important;
+    background-color: #010912;
+}
+
+main > .container {
+    padding: 60px 15px 0;
+  }
+  
+  .footer {
+    background-color: #f5f5f5;
+  }
+  
+  .footer > .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  
+  code {
+    font-size: 80%;
+  }
 
 // MEDIA QUERIES
 
@@ -26,22 +53,61 @@ p { font-family: 'Assistant', sans-serif; widows: 3; }
     html {
         font-size: calc(14px + 6 * ((100vw - 320px) / 680));
     }
-    h1 {
+    .hello {
         font-size: calc(24px + 5 * ((100vw - 320px) / 680));
+        line-height: 30px;
+    }
+
+    h1 {
+        font-size: calc(22px + 5 * ((100vw - 320px) / 680));
+        line-height: 30px;
     }
     h2 {
-        font-size: calc(16px + 5 * ((100vw - 320px) / 680));
+        font-size: calc(14px + 5 * ((100vw - 320px) / 680));
+        line-height: 25px;
+        font-weight: normal;
       }
+      .icons a {
+          font-size: 25px;
+      }
+      .modal-footer {
+          .btn {
+              width: 100%;
+          }
+      }
+      .modal-full {
+        min-width: 100%;
+        margin: 0;
+    }
+    
+    .modal-full .modal-content {
+        min-height: 100vh;
+    }
   }
   @media screen and (min-width: 1000px) {
     html {
         font-size: 16px;
     }
+
+    .hello {
+        font-size: 50px;
+        line-height: 60px;
+    }
     
     h1 {
-        font-size: 34px;
+        font-size: 50px;
+        line-height: 60px;
     }
     h2 {
         font-size: 18px;
+        line-height: 25px;
       }
+      .icons a {
+        font-size: 35px;
+    }
+    .modal {
+        width: 89.5%;
+        left: 10.5% !important;
+
+    }
   }
